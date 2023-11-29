@@ -1,6 +1,6 @@
-import axios from "axios";
+import Axios from "axios";
 
-const apiDeputados = axios.create({
+const apiDeputados = Axios.create({
     baseURL: 'https://dadosabertos.camara.leg.br/api/v2'
 })
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Button, View } from 'react-native';
 import { Video } from 'expo-av';
 
-const Noticias = () => {
+const Noticias = ({ navigation }) => {
 
  const video = React.useRef(null);
  const [status, setStatus] = React.useState({});
@@ -22,7 +22,6 @@ const Noticias = () => {
       <Button title="Play from 5s" onPress={() => video.current.playFromPositionAsync(5000)} />
       <Button title={status.isLooping ? "Set to not loop" : "Set to loop"} onPress={() => video.current.setIsLoopingAsync(!status.isLooping)} />
     </View>
-    <StatusBar style="auto" />
   </View>
   );
 }

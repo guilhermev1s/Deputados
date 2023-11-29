@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Text } from 'react-native-paper'
-import apiDeputados from '../services/apiDeputados'
 import { Image } from 'react-native'
+import apiDeputados from '../../services/apiDeputados'
 
 const Deputados = ({navigation}) => {
 

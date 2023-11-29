@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Text } from 'react-native-paper'
-import apiDeputados from '../services/apiDeputados'
+import apiDeputados from '../../services/apiDeputados'
 
 const Detalhes = ({navigation, route}) => {
 
